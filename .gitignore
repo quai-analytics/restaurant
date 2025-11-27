@@ -10,6 +10,9 @@ __pycache__/
 *.jpeg
 *.jpg
 
+# Secrets de Google
+secrets.json
+
 # Distribution / packaging
 .Python
 build/
