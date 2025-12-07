@@ -9,7 +9,7 @@ from google.oauth2 import service_account
 # --- ⚙️ CONFIGURACIÓN ---
 BUCKET_NAME = "data_quai_dev"
 FILE_NAME = "restaurante_diario.csv"  # El archivo que lee tu Streamlit
-CANTIDAD_REGISTROS = 50               # Cuantas ventas quieres simular
+CANTIDAD_REGISTROS = 1000               # Cuantas ventas quieres simular
 RUTA_SECRETS = "secrets.json"         # ⚠️ Ajusta esto si tu json tiene otro nombre
 
 def generar_y_subir():
@@ -28,7 +28,7 @@ def generar_y_subir():
 
     for _ in range(CANTIDAD_REGISTROS):
         # Fecha: Aleatoria en los últimos 45 días
-        dias_atras = random.randint(0, 45)
+        dias_atras = random.randint(0, 365)
         fecha = fecha_base - timedelta(days=dias_atras)
         
         # Selecciones aleatorias
