@@ -12,7 +12,8 @@ __pycache__/
 
 # Secrets de Google
 secrets.json
-
+secret_n8n_webhook.json
+w
 # Distribution / packaging
 .Python
 build/
