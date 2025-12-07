@@ -21,7 +21,7 @@ bucket = client.bucket(BUCKET_NAME)
 # NOTA: Si ya tienes las variables 'bucket' y 'guardar_df_en_bucket' definidas en tu entorno,
 # puedes saltarte la configuración de arriba y usar solo la función de abajo.
 
-def generar_datos_ficticios(dias=30):
+def generar_datos_ficticios(dias=365):
     print(f"Generando datos para los últimos {dias} días...")
     
     fechas = []
