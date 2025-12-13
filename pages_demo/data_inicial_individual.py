@@ -27,7 +27,7 @@ def generar_y_subir():
     fecha_base = date.today()
 
     for _ in range(CANTIDAD_REGISTROS):
-        # Fecha: Aleatoria en los últimos 45 días
+        # Fecha: Aleatoria en los últimos 365 días
         dias_atras = random.randint(0, 365)
         fecha = fecha_base - timedelta(days=dias_atras)
         

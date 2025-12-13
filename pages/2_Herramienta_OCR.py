@@ -30,7 +30,7 @@ else:
     N8N_URL = secrets["dev_server"]
     
 
-
+N8N_URL = "https://n8n.quaianalytics.com/webhook/15bcbbde-15df-4e36-bd33-7c2a66058169"
 
 # Configuración de página para aprovechar el ancho completo
 st.set_page_config(page_title="OCR Dashboard", layout="wide")

@@ -172,7 +172,7 @@ st.header("📊 Historial de Informes de Venta")
 df_display = st.session_state.informes_df.copy()
 
 # Ordenamos por fecha, el más reciente primero
-df_display = df_display.sort_values(by="Fecha", ascending=False)
+#df_display = df_display.sort_values(by="Fecha", ascending=False)
 
 # Usamos st.dataframe con configuración para formatear los números
 df_event = st.dataframe(
